@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "108189471397",
+    "project_id": "dotsuser-3a394",
+    "storage_bucket": "dotsuser-3a394.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108189471397:android:b36ca65fcd17caa669b34c",
+        "android_client_info": {
+          "package_name": "com.dots.user"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCghRn20cwTTaaml11gdJorJdP5T7kAk3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

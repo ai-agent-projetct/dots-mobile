@@ -1,0 +1,26 @@
+gradle.startParameter.excludedTaskNames.addAll(
+gradle.startParameter.taskNames.findAll { it.contains("testClasses") }
+)
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+def newBuildDir = rootProject.layout.buildDirectory.dir("../../build").get().asFile
+rootProject.layout.buildDirectory.set(newBuildDir)
+
+subprojects {
+    def newSubprojectBuildDir = new File(newBuildDir, project.name)
+    project.layout.buildDirectory.set(newSubprojectBuildDir)
+}
+
+subprojects {
+    evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete(rootProject.layout.buildDirectory)
+}

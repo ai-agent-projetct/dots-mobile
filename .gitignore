@@ -1,0 +1,5 @@
+# Each app has its own Flutter .gitignore; these cover the repo root
+.DS_Store
+.idea/
+.vscode/
+*.iml
